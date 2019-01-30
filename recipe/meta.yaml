@@ -30,7 +30,7 @@ requirements:
     - scikit-bio >=0.5.4
     - h5py
     - click
-    - Cython>=0.23
+    - Cython >=0.23
 
 test:
   imports:
