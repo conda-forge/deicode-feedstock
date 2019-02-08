@@ -1,5 +1,5 @@
 {% set name = "deicode" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 46f582228ab3dd271ce5e1c3f736339c75d1059f0cee7d09d6f168627dc8621c
+  sha256: d5dd87ac3af7a3db26144d2af7dc19bfc2d7ec428218e8397ec521535ec7010f
 
 build:
   skip: true  # [win or py2k]
@@ -37,11 +37,11 @@ test:
     - deicode
 
 about:
-  home: https://github.com/cameronmartino/DEICODE
+  home: https://github.com/biocore/DEICODE
   license: BSD-3-Clause
   license_family: BSD
   license_file: COPYING.txt
-  summary: 'Robust Aitchison compositional biplots from sparse count data'
+  summary: 'Robust Aitchison PCA on sparse data'
 
 extra:
     recipe-maintainers:
