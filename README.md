@@ -5,13 +5,13 @@
 About deicode
 =============
 
-Home: https://github.com/cameronmartino/DEICODE
+Home: https://github.com/biocore/DEICODE
 
 Package license: BSD-3-Clause
 
 Feedstock license: BSD 3-Clause
 
-Summary: Robust Aitchison compositional biplots from sparse count data
+Summary: Robust Aitchison PCA on sparse data
 
 
 
