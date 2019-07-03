@@ -1,5 +1,5 @@
 {% set name = "deicode" %}
-{% set version = "0.2.2" %}
+{% set version = "0.2.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d1667c41363635098031323b3ad984aea1ec40b3a349445564177f1fddf02f6f
+  sha256: e6c52b2fa5d9a5ddc740321e7a40d596fea2a86437bdbc48490f75f15fb10a9f
 
 build:
   skip: true  # [win or py2k]
