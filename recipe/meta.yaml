@@ -33,7 +33,7 @@ requirements:
 test:
   imports:
     - deicode
-  requirements:
+  requires:
     - pip
   commands:
     - pip check
