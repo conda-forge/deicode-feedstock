@@ -10,17 +10,15 @@ source:
   sha256: 29472dc1f2d7c0cefeab3517d957a2476b5fb981861d1f3deeb75dfa291b34e4
 
 build:
-  skip: true  # [win or py2k]
+  noarch: python
   number: 2
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed" 
 
 requirements:
-
   host:
     - python
     - pip
     - numpy >=1.12.1
-
   run:
     - python
     - numpy >=1.12.1
