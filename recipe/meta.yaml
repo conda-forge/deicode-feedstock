@@ -16,11 +16,11 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
     - numpy >=1.12.1
   run:
-    - python
+    - python >=3.6
     - numpy >=1.12.1
     - pandas >=0.10.0
     - scipy >=0.19.1
@@ -33,6 +33,10 @@ requirements:
 test:
   imports:
     - deicode
+  requirements:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/biocore/DEICODE
