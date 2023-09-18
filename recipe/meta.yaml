@@ -29,6 +29,7 @@ requirements:
     - h5py
     - click
     - Cython >=0.23
+    - biom-format
 
 test:
   imports:
