@@ -6,21 +6,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 29472dc1f2d7c0cefeab3517d957a2476b5fb981861d1f3deeb75dfa291b34e4
 
 build:
   noarch: python
-  number: 2
+  number: 3
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed" 
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
     - numpy >=1.12.1
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - numpy >=1.12.1
     - pandas >=0.10.0
     - scipy >=0.19.1
@@ -36,6 +36,7 @@ test:
     - deicode
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
